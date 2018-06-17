@@ -1,0 +1,275 @@
+body {
+    background-color: #E1E1E1;
+}
+
+#header {
+    width: 100%;
+    background-color: #4A90E2;
+}
+
+#nav {
+    position: relative;
+    height: 76px;
+}
+
+.row {
+    margin: 0;
+}
+
+.menu {
+    position: absolute;
+    left: calc((100% - 660px)/2);
+}
+
+.menu>li {
+    float: left;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+}
+
+.menu>li>a {
+    color: #00408B;
+    display: inline-block;
+    font-size: 24px;
+    width: 160px;
+    padding-top: 20px;
+    padding-bottom: 26px;
+}
+
+.menu>li>.active,
+.menu>li>a:hover {
+    color: #fefefe;
+    border-bottom: 5px solid #00408B;
+}
+
+#section {
+    font-size: 24px;
+}
+
+.section-wrapping {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px;
+}
+
+.to-add {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.addTask {
+    width: 100%;
+    border: 2px solid #C8C8C8;
+    border-radius: 5px;
+    height: 65px;
+    background-color: #FFF;
+    padding-left: 30px;
+}
+
+.to-add:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 41px;
+    height: 20px;
+    border: 1px solid #C8C8C8;
+}
+
+.to-add:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 32px;
+    width: 20px;
+    border: 1px solid #C8C8C8;
+}
+
+.keydown:before,
+.keydown:after {
+    border: 0px;
+}
+
+.addTask:hover {
+    border: 2px solid rgba(25, 25, 25, 1)
+}
+
+.cheader {
+    background-color: #F2F2F2;
+    border-bottom: 2px solid #C8C8C8;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.important-bg {
+    background-color: #FFF2DC;
+}
+
+.cheader>h2 {
+    display: inline-block;
+    margin-left: 70px;
+    height: 100%;
+    line-height: 74px;
+    font-weight: 700;
+}
+
+.cheader>h2:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 2px solid #fefefe;
+    border-radius: 3px;
+    background-color: #fefefe;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 30px;
+    cursor: pointer;
+}
+
+.cheader>h2.done:before {
+    background-image: url("./checked.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #9B9B9B;
+}
+
+.delete {
+    position: absolute;
+    top: 25px;
+    right: 114px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: tomato;
+}
+
+.empty,
+.important {
+    position: absolute;
+    right: 67px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.important {
+    color: #F5A623;
+}
+
+.edit {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.edit:hover {
+    color: #4A90E2;
+}
+
+#edit {
+    cursor: pointer;
+}
+
+.showInformation {
+    font-size: 17px;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.cbody {
+    background-color: #F2F2F2;
+    padding: 20px 70px;
+    font-size: 20px;
+}
+
+.little-title>h3 {
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.little-title>.icon {
+    display: inline-block;
+    width: 20px;
+}
+
+#file {
+    position: absolute;
+    left: -100%;
+}
+
+.plus-square {
+    font-size: 32px;
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.plus-square:hover {
+    color: #4A90E2;
+}
+
+.card-content {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cbody>.card-content:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.card-content>input {
+    width: 162px;
+    height: 35px;
+    padding-left: 15px;
+}
+
+.card-content>input,
+textarea {
+    border: none;
+    font-size: 16px;
+}
+
+textarea {
+    width: 445px;
+    height: 120px;
+    padding: 10px 15px;
+}
+
+.cfooter {
+    font-size: 0px;
+    text-align: center;
+}
+
+.cfooter>a {
+    display: inline-block;
+    width: 50%;
+    font-size: 24px;
+    background-color: #FFF;
+    color: rgb(243, 66, 87);
+    padding: 17px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.cfooter>a:hover {
+    background-color: #4A90E2;
+    color: #FFF;
+}
+
+#quantity {
+    padding-left: 30%;
+    color: #C8C8C8;
+}

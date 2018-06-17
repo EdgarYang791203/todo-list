@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+* {
+    /* 設定所有方框的width,height值設定以border為主 */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* 
+       * 選擇器內的border: 1px solid black
+       讓所有元素都能有邊框顯示，以方便排版，
+       僅在開發排版時使用，平常請註解掉
+    */
+    /*border: 1px solid black;*/
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body>* {
+    font-family: 微軟正黑體;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid #ccc;
+    /* box-shadow: inset 0 1px 3px #ddd; */
+    border-radius: 3px;
+    line-height: normal;
+    transition: all 0.3s;
+    outline: 0;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+.wrapping {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+    color: #C8C8C8;
+}
+
+.hidden {
+    display: none;
+}

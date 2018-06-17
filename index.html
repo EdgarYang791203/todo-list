@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./basic.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="nav" class="wrapping">
+            <ul class="menu row">
+                <li>
+                    <a class="button active" href="#">My Tasks</a>
+                </li>
+                <li>
+                    <a class="button" href="#">In Progress</a>
+                </li>
+                <li>
+                    <a class="button" href="#">Completed</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="section">
+        <div class="section-wrapping">
+            <div class="to-add">
+                <input type="text" class="addTask" placeholder="     Add Task Title and Press Enter...">
+            </div>
+            <div id="card" class="hidden mb-4">
+                <div id="cheader" class="cheader">
+                    <h2 id="taskTitle">Type Something Up...</h2>
+                    <i class="fas fa-trash delete"></i>
+                    <i id="fa-star" class="fa-star far empty"></i>
+                    <i class="fas fa-edit edit"></i>
+                </div>
+                <div id="cardBody" class="cbody">
+                    <div class="little-title">
+                        <i class="far fa-calendar-alt icon"></i>
+                        <h3>Deadline</h3>
+                    </div>
+                    <div class="card-content">
+                        <input id="dateInput" type="date" placeholder="yy/mm/dd">
+                        <input id="timeInput" type="time" placeholder="hh:mm">
+                    </div>
+                    <div class="little-title">
+                        <i class="far fa-file icon"></i>
+                        <input type="file" id="file">
+                        <h3>File</h3>
+                    </div>
+                    <div class="card-content">
+                        <label for="file">
+                            <i class="fas fa-plus-square plus-square"></i>
+                        </label>
+                    </div>
+                    <div class="little-title">
+                        <i class="far fa-comment-dots icon"></i>
+                        <h3>Comment</h3>
+                    </div>
+                    <div class="card-content">
+                        <textarea name="" id="comment" placeholder="Type your memo here…"></textarea>
+                    </div>
+                </div>
+                <div id="cardFooter" class="cfooter">
+                    <a href="#" id="cancel">
+                        <i class="fas fa-times"></i>
+                        <span>Cancel</span>
+                    </a>
+                    <a href="#" id="saveTask">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Task</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="quantity"></div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAbGfUe6RZUiCo8cdEXo-Nrk4vAmfH02rU",
+            authDomain: "edgaryang93307.firebaseapp.com",
+            databaseURL: "https://edgaryang93307.firebaseio.com",
+            projectId: "edgaryang93307",
+            storageBucket: "edgaryang93307.appspot.com",
+            messagingSenderId: "235965308694"
+        };
+        firebase.initializeApp(config);
+
+        var db = firebase.firestore();
+        var storage = firebase.storage();
+    </script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
